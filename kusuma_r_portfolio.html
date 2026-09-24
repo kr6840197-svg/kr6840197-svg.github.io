@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kusuma R. | Portfolio</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="flex items-center gap-2 group">
+          <span class="w-9 h-9 rounded-lg bg-brand-600 text-white flex items-center justify-center font-bold text-base shadow-sm group-hover:bg-brand-700 transition">
+            KR
+          </span>
+          <span class="font-semibold text-slate-900 text-lg tracking-tight">Kusuma R.</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <a href="#about" class="text-slate-600 hover:text-brand-600 transition">About</a>
+          <a href="#projects" class="text-slate-600 hover:text-brand-600 transition">Projects & Activities</a>
+          <a href="#skills" class="text-slate-600 hover:text-brand-600 transition">Skills</a>
+          <a href="#contact" class="px-4 py-2 rounded-lg bg-brand-600 text-white hover:bg-brand-700 transition shadow-sm">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200 py-3 space-y-2">
+        <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">About</a>
+        <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Projects & Activities</a>
+        <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Skills</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-brand-700 font-semibold hover:bg-brand-50">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section id="home" class="py-16 sm:py-24 bg-gradient-to-b from-brand-50/60 to-transparent border-b border-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100 text-brand-800 text-xs sm:text-sm font-medium mb-6">
+          <span class="w-2 h-2 rounded-full bg-brand-600"></span>
+          Computer Science and Information Technology
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight mb-4">
+          Hi, I'm <span class="text-brand-600">Kusuma R.</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+          3rd Semester Student at <span class="font-semibold text-slate-800">REVA University</span>, developing practical coding, problem-solving, and collaboration skills.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="#projects" class="px-6 py-3 rounded-lg bg-brand-600 text-white font-medium hover:bg-brand-700 transition shadow-sm">
+            View Projects & Activities
+          </a>
+          <a href="#about" class="px-6 py-3 rounded-lg bg-white border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition shadow-sm">
+            About Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-16 sm:py-20">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-xs uppercase tracking-widest text-brand-600 font-bold mb-2">Background</h2>
+          <h3 class="text-3xl font-bold text-slate-900 tracking-tight">About Me</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          <!-- Student Details Card -->
+          <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+            <h4 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-3 mb-4">Academic Details</h4>
+            <div class="space-y-4 text-sm">
+              <div>
+                <span class="block text-slate-400 text-xs font-medium uppercase">Name</span>
+                <span class="font-medium text-slate-800">Kusuma R.</span>
+              </div>
+              <div>
+                <span class="block text-slate-400 text-xs font-medium uppercase">Semester</span>
+                <span class="font-medium text-slate-800">3rd semester</span>
+              </div>
+              <div>
+                <span class="block text-slate-400 text-xs font-medium uppercase">Branch</span>
+                <span class="font-medium text-slate-800">Computer Science and Information Technology (CSIT)</span>
+              </div>
+              <div>
+                <span class="block text-slate-400 text-xs font-medium uppercase">University</span>
+                <span class="font-medium text-slate-800">REVA University</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative and Career Goal -->
+          <div class="md:col-span-2 space-y-6">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-7 shadow-sm">
+              <h4 class="text-lg font-semibold text-slate-900 mb-3">Profile Overview</h4>
+              <p class="text-slate-600 leading-relaxed">
+                I am Kusuma R., a third-semester Computer Science and Information Technology student at REVA University. I am interested in programming, problem-solving, and learning new technologies. Through my academic activities, I have been developing my skills in coding, GitHub, collaboration, and software development. I enjoy learning through practical projects and continuously improving my technical skills.
+              </p>
+            </div>
+
+            <div class="bg-brand-50 border border-brand-100 rounded-2xl p-6 sm:p-7">
+              <div class="flex items-center gap-2 mb-3">
+                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-brand-900">Career & Learning Goal</h4>
+              </div>
+              <p class="text-brand-800 leading-relaxed">
+                My current goal is to improve my programming and problem-solving skills and gain more practical experience in software development. I want to build more projects, strengthen my knowledge of different technologies, and prepare myself for a successful career in the technology field.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-16 sm:py-20 bg-slate-100/60 border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-xs uppercase tracking-widest text-brand-600 font-bold mb-2">Hands-on Experience</h2>
+          <h3 class="text-3xl font-bold text-slate-900 tracking-tight">Projects and Activities</h3>
+          <p class="mt-3 text-slate-600 max-w-xl mx-auto text-sm sm:text-base">
+            Practical activities and repositories developed through academic coursework and problem-solving practice.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1: Hello World Repository -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between shadow-sm hover:border-brand-300 hover:shadow-md transition">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <h4 class="text-xl font-bold text-slate-900 mb-3">Hello World Repository</h4>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                I created a Hello World repository using GitHub. This helped me understand the basics of creating a repository, adding a program, committing changes, and storing my work online.
+              </p>
+            </div>
+            <div>
+              <a href="https://github.com/kr6840197-svg/hello-world--C.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full gap-2 px-4 py-2.5 rounded-lg bg-slate-900 text-white text-sm font-medium hover:bg-brand-700 transition">
+                <span>View on GitHub</span>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Pair Programming -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between shadow-sm hover:border-brand-300 hover:shadow-md transition">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <h4 class="text-xl font-bold text-slate-900 mb-3">Pair Programming</h4>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                I worked with a partner on a programming task. We discussed different approaches, shared ideas, and reviewed the solution together. This helped me develop teamwork, communication, and collaboration skills.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-100">
+              <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-md w-full justify-center">
+                <svg class="w-3.5 h-3.5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Collaborative Academic Activity
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 3: LeetCode Solutions -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between shadow-sm hover:border-brand-300 hover:shadow-md transition">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h4 class="text-xl font-bold text-slate-900 mb-3">LeetCode Solutions</h4>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                I practiced solving programming problems using LeetCode and documented my solutions in a GitHub repository. This helped me improve my logical thinking and problem-solving skills.
+              </p>
+            </div>
+            <div>
+              <a href="https://github.com/kr6840197-svg/leetcode-solutions.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full gap-2 px-4 py-2.5 rounded-lg bg-slate-900 text-white text-sm font-medium hover:bg-brand-700 transition">
+                <span>View on GitHub</span>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-16 sm:py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-xs uppercase tracking-widest text-brand-600 font-bold mb-2">Competencies</h2>
+          <h3 class="text-3xl font-bold text-slate-900 tracking-tight">Skills</h3>
+          <p class="mt-3 text-slate-600 text-sm sm:text-base">
+            Core technical proficiencies and interpersonal capabilities developed through coursework and practice.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Skill item: Python -->
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 transition">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            </div>
+            <span class="font-medium text-slate-800 text-sm">Python</span>
+          </div>
+
+          <!-- Skill item: C programming -->
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 transition">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            </div>
+            <span class="font-medium text-slate-800 text-sm">C programming</span>
+          </div>
+
+          <!-- Skill item: Programming fundamentals -->
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 transition">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+            </div>
+            <span class="font-medium text-slate-800 text-sm">Programming fundamentals</span>
+          </div>
+
+          <!-- Skill item: Problem-solving -->
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 transition">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+            </div>
+            <span class="font-medium text-slate-800 text-sm">Problem-solving</span>
+          </div>
+
+          <!-- Skill item: Git and GitHub -->
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 transition">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            </div>
+            <span class="font-medium text-slate-800 text-sm">Git and GitHub</span>
+          </div>
+
+          <!-- Skill item: LeetCode problem solving -->
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 transition">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+            </div>
+            <span class="font-medium text-slate-800 text-sm">LeetCode problem solving</span>
+          </div>
+
+          <!-- Skill item: Teamwork -->
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 transition">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </div>
+            <span class="font-medium text-slate-800 text-sm">Teamwork</span>
+          </div>
+
+          <!-- Skill item: Communication -->
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 transition">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+            </div>
+            <span class="font-medium text-slate-800 text-sm">Communication</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 sm:py-20 bg-slate-100/60 border-t border-slate-200">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-xs uppercase tracking-widest text-brand-600 font-bold mb-2">Get In Touch</h2>
+        <h3 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Contact</h3>
+        <p class="text-slate-600 text-sm sm:text-base mb-8 max-w-xl mx-auto">
+          I am currently pursuing my 3rd semester in Computer Science and Information Technology at REVA University and am open to learning, teamwork, and software development collaboration.
+        </p>
+
+        <!-- Information Card -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm max-w-md mx-auto text-left">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-lg">
+              KR
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 text-lg">Kusuma R.</h4>
+              <p class="text-xs text-slate-500">CSIT • REVA University</p>
+            </div>
+          </div>
+
+          <div class="space-y-3 pt-2 border-t border-slate-100 text-sm text-slate-700">
+            <div class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-brand-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+              <span>REVA University, Bengaluru</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-brand-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+              <span>3rd Semester, CSIT</span>
+            </div>
+          </div>
+
+          <!-- GitHub Repositories Link List -->
+          <div class="mt-6 pt-4 border-t border-slate-100">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-2">Public Repositories</span>
+            <div class="space-y-2">
+              <a href="https://github.com/kr6840197-svg/hello-world--C.git" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-xs text-brand-700 hover:text-brand-800 bg-brand-50 hover:bg-brand-100 p-2.5 rounded-lg transition font-medium">
+                <span>Hello World Repository</span>
+                <span>↗</span>
+              </a>
+              <a href="https://github.com/kr6840197-svg/leetcode-solutions.git" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-xs text-brand-700 hover:text-brand-800 bg-brand-50 hover:bg-brand-100 p-2.5 rounded-lg transition font-medium">
+                <span>LeetCode Solutions</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-4">
+      <p>&copy; <span id="year"></span> Kusuma R. • REVA University. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set dynamic current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Responsive Mobile navigation toggle
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Auto close mobile menu upon clicking links
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
